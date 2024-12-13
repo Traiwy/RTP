@@ -1,6 +1,8 @@
 package ru.traiwy.rtp;
 
 import Command.CommandRTP;
+import Command.CommandRtpMenu;
+import Event.OnInventoryClick;
 import Event.PlayerMove;
 import Util.LocationGenerator;
 import Util.RtpInProcessing;
@@ -17,6 +19,8 @@ public final class RTP extends JavaPlugin {
         locationGenerator = new LocationGenerator(this);
         rtpInProcessing =  new RtpInProcessing(this);
         getCommand("rtp").setExecutor(new CommandRTP(this));
+        getCommand("rtpmenu").setExecutor(new CommandRtpMenu());
+        getServer().getPluginManager().registerEvents(new OnInventoryClick(this), this);
         getServer().getPluginManager().registerEvents(new PlayerMove(this), this);
     }
 

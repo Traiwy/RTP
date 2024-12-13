@@ -6,3 +6,6 @@ commands:
   rtp:
     usage: /rtp
     description: Телепортирует игрока на рандомные координаты
+  rtpmenu:
+    usage: /rtpmenu
+    description: Открывает меню с телепортацией
