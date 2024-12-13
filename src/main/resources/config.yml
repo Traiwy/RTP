@@ -1,0 +1,28 @@
+unsafeBlocks:
+  - LAVA
+  - WATER
+  - FIRE
+  - CACTUS
+  - MAGMA_BLOCK
+rtpLimit:
+  negative: true
+  xLimit: 1000
+  zLimit: 1000
+
+message:
+  title:
+    enabled: true
+    secondLine: "&bТелепортация"
+  title2:
+    enable: true
+    firstLine: "&f через 5 секунд"
+  chat:
+    enabled: true
+    message: "&6▶&f Вы телепортировались на координаты — \n X: &6%x%, &fY: &6%y%, &fZ: &6%z%!"
+
+  chat2:
+    enable: true
+    message: "&b▶&f Телепортация начнется через &b5 &fсекунд. Не двигайтесь..."
+  chat3:
+    enable: true
+    message: "&c▶&f Рандомная телепортация &c отменена!&f Вы двигались.."

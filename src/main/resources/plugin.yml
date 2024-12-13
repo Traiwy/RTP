@@ -1,0 +1,8 @@
+name: RTP
+version: '${version}'
+main: ru.traiwy.rtp.RTP
+api-version: '1.16'
+commands:
+  rtp:
+    usage: /rtp
+    description: Телепортирует игрока на рандомные координаты
