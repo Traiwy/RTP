@@ -4,8 +4,17 @@ main: ru.traiwy.rtp.RTP
 api-version: '1.16'
 commands:
   rtp:
+    description: Телепортирует игрока на случайные координаты.
     usage: /rtp
-    description: Телепортирует игрока на рандомные координаты
+    permission: rtp.command
+    permission-message: У вас нет прав для использования этой команды
   rtpmenu:
+    description: Открывает меню RTP.
     usage: /rtpmenu
-    description: Открывает меню с телепортацией
+    permission: rtp.menu
+    permission-message: У вас нет прав для использования этой команды
+  rtphist:
+    usage: /rtphist [игрок]
+    description: Пишет историю использований /rtp игроком
+    permission: rtp.hist
+    permission-message: У вас нет прав для использования этой команды

@@ -30,11 +30,9 @@ public class CommandRtpMenu implements CommandExecutor {
         inventory = Bukkit.createInventory(null, 27, Component.text("RTP menu", NamedTextColor.BLUE));
         ItemStack item = new ItemStack(Material.COMPASS);
         ItemMeta meta = item.getItemMeta();
-        //Установка имени и цвета предмету
         Component displayName = Component.text("Рандомная телепортация")
                 .color(TextColor.color(0x00FFFF))
                 .decoration(TextDecoration.ITALIC, false);
-        //Создаем описание предмета
         List<Component> lore = new ArrayList<>();
         lore.add(Component.text("Телепорация..")
                 .decoration(TextDecoration.ITALIC, false));

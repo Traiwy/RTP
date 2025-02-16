@@ -8,21 +8,31 @@ rtpLimit:
   negative: true
   xLimit: 1000
   zLimit: 1000
+rtpLongLimit:
+  negative: true
+  xLimit: 10000
+  zLimit: 10000
 
 message:
   title:
-    enabled: true
-    secondLine: "&bТелепортация"
+    enable: true
+    secondLine: "§bТелепортация"
   title2:
     enable: true
-    firstLine: "&f через 5 секунд"
+    firstLine: "§f через 5 секунд"
   chat:
     enabled: true
-    message: "&6▶&f Вы телепортировались на координаты — \n X: &6%x%, &fY: &6%y%, &fZ: &6%z%!"
-
+    message: "§6▶§f Вы телепортировались на координаты — \n X: §6%x%, §fY: §6%y%, §fZ: §6%z%!"
   chat2:
     enable: true
-    message: "&b▶&f Телепортация начнется через &b5 &fсекунд. Не двигайтесь..."
+    message: "§b▶§f Телепортация начнется через §b5 §fсекунд. Не двигайтесь..."
   chat3:
     enable: true
-    message: "&c▶&f Рандомная телепортация &c отменена!&f Вы двигались.."
+    message: "§c▶§f Рандомная телепортация &c отменена!§f Вы двигались.."
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: root
+  database: rtpplugin
